@@ -1,24 +1,26 @@
 Program pas;
 var
-l:array [1..30] of char;
 str: string;
-a:char;
-i,index: integer;
-flag:boolean;
+j,maxc:char;
+i,k, max: integer;
 begin
   write('¬ведите строку: '); readln(str);
   
   for j:= 'a' to 'z' do
   begin
-    i:=i+1;
-    l[i]:=j;
-  end;
-  
-  for i:= 1 to lenth(str) do
-  begin
-    for z:=1 to 30 do
+   for i:=1 to length(str) do
+   begin
+    if str[i] = j then
     begin
-      if str
+      k:=k+1;
+    end;
+   end;
+    if k > max then
+    begin
+      max:=k;
+      maxc:=j;
     end;
   end;
+  
+writeln(maxc);
 end.
