@@ -3,9 +3,9 @@ var
 str,substr,newstr:string;
 s,e:integer;
 begin
-  write('Введите строку: '); readln(str);
-  write('Введите слово, которое надо заменить: '); readln(substr);
-  write('Введите слово, НА которое надо заменить слово: '); readln(newstr);
+  write('Stroka: '); readln(str);
+  write('Slovo1: '); readln(substr);
+  write('Slovo2: '); readln(newstr);
   
   s:=pos(substr,str);
   e:=length(substr);
